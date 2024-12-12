@@ -13,7 +13,7 @@ test(`Verify Navigation to Docs`, async ({ page }) => {
     // Verify the URL contains '/docs'
     // await homePage.assertCurrentUrlContains(docsPage);
 
-    // Verify the presence of a key element on the Docs page
+    // Verify the presence of a key element on the Docs page.
     // const docsHeader = await page.locator("h1");
     // await expect(docsHeader).toHaveText("Documentation"); // Adjust expected text if needed
 

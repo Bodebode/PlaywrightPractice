@@ -28,7 +28,7 @@ export class DocsPage {
 
   async assertElementPresent(selector: string, expectedText?: string): Promise<void> {
     const element = this.page.locator(selector);
-    await expect(element).toBeVisible(); // Checks if the element is visible
+    await expect(element).toBeVisible(); // Checks if the element is visible.
     if (expectedText) {
       await expect(element).toHaveText(expectedText); // Optionally check the text
     }

@@ -29,7 +29,7 @@ test(`Verify Navigation to Docs`, async ({ page }) => {
   // Verify the URL contains '/docs'
   await expect(page).toHaveURL(/.*docs/);
 
-  // Verify the presence of a key element on the Docs page
+  // Verify the presence of a key element on the Docs page.
   // const docsHeader = await page.locator("h1");
   // await expect(docsHeader).toHaveText("Installation");
 
