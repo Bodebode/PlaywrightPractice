@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { DocsPage } from '../pages/DocsPage';
+import { DocsPage } from '../../pages/DocsPage';
 
 /*TESTS AND VERIFIES THE ENTIRE WEBSITES BASIC HEADER NAVIGATIONS*/
 
