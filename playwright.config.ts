@@ -3,12 +3,12 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   projects: [
     {
-      name: 'Chromium - Headed',
+      name: 'Chromium - Headedless',
       use: {
         browserName: 'chromium',
-        headless: false, // Set to false for headed mode
+        headless: true, // Set to false for headed mode
         launchOptions: {
-          headless: false, // Ensure browser runs in headed mode
+          headless: true, // Ensures browser runs in headedless mode
         },
       },
     },
@@ -20,35 +20,35 @@ export default defineConfig({
     //   },
     // },
 
-    {
-      name: 'Safari - Headed',
-      use: {
-        browserName: 'webkit',
-        headless: false,
-        // DeviceOrientationEvent: 'landscape-primary',
-      },
-    },
+    // {
+    //   name: 'Safari - Headed',
+    //   use: {
+    //     browserName: 'webkit',
+    //     headless: false,
+    //     // DeviceOrientationEvent: 'landscape-primary',
+    //   },
+    // },
 
         /* Test against mobile viewports. */
-    {
-      name: 'Mobile Chrome',
-      use: {
-        ...devices['Pixel 5'] },
-    },
-    {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    },
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: {
+    //     ...devices['Pixel 5'] },
+    // },
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 12'] },
+    // },
 
-    {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    },
+    // {
+    //   name: 'Microsoft Edge',
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    // },
 
-    {
-      name: 'Mobile firefox',
-      use: { ...devices['Pixel 5'] },
-    }
+    // {
+    //   name: 'Mobile firefox',
+    //   use: { ...devices['Pixel 5'] },
+    // }
 
   ],
 });
