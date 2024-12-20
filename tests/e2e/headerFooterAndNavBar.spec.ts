@@ -60,23 +60,23 @@ test(`Verify Footer on API Class Playwright page`, async ({ page }) => {
 });
 
 
-test(`Verify Footer on Tutorial page`, async ({ page }) => {
-    const docsPage = new DocsPage(page);
-    await docsPage.navigateTo('docs/tutorial');
-    await expect(page).toHaveURL(/.*tutorial/);
-    await expect(page.locator('footer')).toBeVisible();
-    const errorText = page.locator("h1"); // Locate the element containing "404" or "page not found" text
-    const errorMessage = await errorText.textContent();
-    if (errorMessage === "Page Not Found") {
-        console.log("Although footer is visible, this page doesn't exist, it's not a real page, test is pointless");
-    }
-});
+// test(`Verify Footer on Tutorial page`, async ({ page }) => {
+//     const docsPage = new DocsPage(page);
+//     await docsPage.navigateTo('docs/tutorial');
+//     await expect(page).toHaveURL(/.*tutorial/);
+//     await expect(page.locator('footer')).toBeVisible();
+//     const errorText = page.locator("h1"); // Locate the element containing "404" or "page not found" text
+//     const errorMessage = await errorText.textContent();
+//     if (errorMessage === "Page Not Found") {
+//         console.log("Although footer is visible, this page doesn't exist, it's not a real page, test is pointless");
+//     }
+// });
 
 
-test(`Verify Footer on Reference page`, async ({ page }) => {
+test(`Verify Footer on About page`, async ({ page }) => {
     const docsPage = new DocsPage(page);
-    await docsPage.navigateTo('docs/reference');
-    await expect(page).toHaveURL(/.*reference/);
+    await docsPage.navigateTo('about');
+    await expect(page).toHaveURL(/.*about/);
     await expect(page.locator('footer')).toBeVisible();
     const errorText = page.locator("h1"); // Locate the element containing "404" or "page not found" text
     const errorMessage = await errorText.textContent();

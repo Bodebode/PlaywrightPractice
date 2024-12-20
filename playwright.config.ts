@@ -50,8 +50,8 @@ export default defineConfig({
     //   use: { ...devices['Pixel 5'] },
     // }
 
-  ],
-});
+//   ],
+// });
 
 
 /**
