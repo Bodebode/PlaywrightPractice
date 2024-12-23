@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { DocsPage } from '../../pages/DocsPage';
-import AxeBuilder from '@axe-core/playwright';
+// import AxeBuilder from '@axe-core/playwright';
 
 
 test.skip(`Verify Accessibility`, async ({ page }) => {
