@@ -12,6 +12,8 @@ export default defineConfig({
         },
       },
     },
+
+
     // {
     //   name: 'Firefox - Headed',
     //   use: {
@@ -131,6 +133,4 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 
-
-
-// });
+]})
