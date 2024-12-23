@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { DocsPage } from '../../pages/DocsPage';
-// import AxeBuilder from '@axe-core/playwright';
+import AxeBuilder from '@axe-core/playwright';
 
 test(`Verify Accessibility`, async ({ page }) => {
     await page.goto('https://playwright.dev/');
@@ -17,9 +16,6 @@ test(`Verify Accessibility`, async ({ page }) => {
 
     console.log(`\nTotal accessibility violations found: ${violations.length}`);
 });
-
-
-
 
 test('Verify Accessibility Standards and Readability', async ({ page }) => {
     // Navigate to the page

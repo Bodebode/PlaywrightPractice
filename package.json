@@ -8,10 +8,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.1"
   },
   "dependencies": {
-    "@axe-core/playwright": "^4.10.1"
+    "node": "^23.5.0"
   }
 }

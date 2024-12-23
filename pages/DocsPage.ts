@@ -2,10 +2,10 @@ import { expect, Locator, Page } from '@playwright/test';
 
 export class DocsPage {
   goto() {
-      throw new Error('Method not implemented.');
+      // throw new Error('Method not implemented.');
   }
   getTitle() {
-      throw new Error('Method not implemented.');
+      // throw new Error('Method not implemented.');
   }
   private page: Page;
 

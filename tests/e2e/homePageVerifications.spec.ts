@@ -17,6 +17,16 @@ await page.getByRole('link', { name: 'Get started' }).click();
 await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
+test('Verify home page essential elements', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+
+  // Check if the main navigation bar is visible
+  await expect(page.getByRole('navigation')).toBeVisible();
+
+// Check if the footer is visible
+await expect(page.getByRole('contentinfo')).toBeVisible();
+
+});
 
 
 
